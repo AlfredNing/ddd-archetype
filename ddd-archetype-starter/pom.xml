@@ -9,26 +9,39 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ddd-archetype-domain</artifactId>
-
-    <description>领域模型层，用于放置领域模型，包括实体、值对象、Repository、Factory等的定义</description>
+    <artifactId>ddd-archetype-starter</artifactId>
 
     <properties>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.feiniaojin.ddd</groupId>
-            <artifactId>ddd-archetype-common</artifactId>
+            <artifactId>ddd-archetype-user-interface</artifactId>
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

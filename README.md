@@ -1,6 +1,7 @@
 <div align=center><img src="https://s1.ax1x.com/2023/05/22/p9o1OG6.png"/></div>
 
 # 1. ddd-archetype介绍
+**ddd-archetype做了简化版**
 
 本项目是作者《悟道领域驱动设计》书中采用的应用架构的脚手架。《悟道领域驱动设计》一书是作者多年实战领域驱动设计的总结，力求用最平实、最通俗、最容易理解的方式将DDD分享给各位朋友，目前该书已上架各大电商平台，感兴趣的朋友可以帮忙支持一下。
 
@@ -29,7 +30,7 @@ ddd-archetype是一个Maven Archetype的原型工程，我们将其克隆到本�
 
 ### 2.1.1 克隆项目
 
-将项目克隆到本地：
+将项目克隆到本地：切换分支feature/ddd-simplify
 
 ```shell
 git clone https://github.com/feiniaojin/ddd-archetype.git

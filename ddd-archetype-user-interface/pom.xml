@@ -9,26 +9,24 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ddd-archetype-domain</artifactId>
-
-    <description>领域模型层，用于放置领域模型，包括实体、值对象、Repository、Factory等的定义</description>
+    <artifactId>ddd-archetype-user-interface</artifactId>
 
     <properties>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>com.feiniaojin</groupId>
+            <artifactId>graceful-response</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.boot.version}</version>
         </dependency>
         <dependency>
             <groupId>com.feiniaojin.ddd</groupId>
-            <artifactId>ddd-archetype-common</artifactId>
+            <artifactId>ddd-archetype-application</artifactId>
         </dependency>
     </dependencies>
-
 </project>

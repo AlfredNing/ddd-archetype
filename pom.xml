@@ -10,16 +10,14 @@
     <version>1.1-SNAPSHOT</version>
     <modules>
         <module>ddd-archetype-domain</module>
-        <module>ddd-archetype-application-service</module>
-        <module>ddd-archetype-infrastructure-persistence</module>
-        <module>ddd-archetype-infrastructure-publisher</module>
-        <module>ddd-archetype-infrastructure-gateway</module>
-        <module>ddd-archetype-infrastructure-cache</module>
-        <module>ddd-archetype-user-interface-web</module>
-        <module>ddd-archetype-user-interface-worker</module>
-        <module>ddd-archetype-user-interface-provider</module>
-        <module>ddd-archetype-user-interface-subscriber</module>
-        <module>ddd-archetype-launcher</module>
+        <module>ddd-archetype-application</module>
+        <module>ddd-archetype-infra</module>
+        <module>ddd-archetype-user-interface</module>
+        <module>ddd-archetype-starter</module>
+        <module>ddd-archetype-common</module>
+        <module>ddd-archetype-api-common</module>
+        <module>ddd-archetype-rpc-sdk</module>
+        <module>ddd-archetype-client-sdk</module>
     </modules>
 
     <properties>
@@ -83,7 +81,7 @@
             </dependency>
             <dependency>
                 <groupId>com.feiniaojin.ddd</groupId>
-                <artifactId>ddd-archetype-infrastructure-cache</artifactId>
+                <artifactId>ddd-archetype-infra</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -108,17 +106,27 @@
             </dependency>
             <dependency>
                 <groupId>com.feiniaojin.ddd</groupId>
-                <artifactId>ddd-archetype-application-service</artifactId>
+                <artifactId>ddd-archetype-application</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.feiniaojin.ddd</groupId>
-                <artifactId>ddd-archetype-user-interface-web</artifactId>
+                <artifactId>ddd-archetype-user-interface</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.feiniaojin.ddd</groupId>
-                <artifactId>ddd-archetype-launcher</artifactId>
+                <artifactId>ddd-archetype-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.ddd</groupId>
+                <artifactId>ddd-archetype-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.feiniaojin.ddd</groupId>
+                <artifactId>ddd-archetype-api-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

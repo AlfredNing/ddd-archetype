@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.feiniaojin.ddd</groupId>
+        <artifactId>ddd-archetype</artifactId>
+        <version>1.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>ddd-archetype-rpc-sdk</artifactId>
+    <description>系统对外封装的rpc sdk层</description>
+
+    <properties>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.feiniaojin.ddd</groupId>
+            <artifactId>ddd-archetype-api-common</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
